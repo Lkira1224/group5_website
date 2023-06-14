@@ -1,0 +1,154 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+h4{
+   text-align: center;
+}
+.container{
+   padding: 30px;
+   font-family: 'roboto';
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 24px;
+}
+.container p{
+   margin-bottom: 15px;
+}
+.thumbnail{
+   width: 450px;
+   position: relative;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+   background-color: #fff;
+   overflow: hidden;
+   border-radius: 8px;
+   margin-bottom: 10px;
+}
+.thumbnail:before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 8px solid #fff;
+   z-index: 2;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+.thumbnail img{
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   transform: scale(1) rotate(0deg);
+   transition: all .5 linear;
+}
+.thumbnail:hover img{
+   transform: scale(1.1) rotate(-5deg);
+}
+.thumbnail.right{
+   float: right;
+   margin-left: 20px;
+}
+.thumbnail.left{
+   float: left;
+   margin-right: 20px;
+}
+@media screen and (max-width:767px){
+   .thumbnail.right{
+      float: none;
+      margin-left: 0px;
+   }
+   .thumbnail.left{
+      float: none;
+      margin-right: 0px;
+   }
+   .thumbnail{
+      width: 100%;
+   }
+}
+
+footer{
+   background-color: #111;
+}
+.footerContainer{
+   width: 100%;
+   padding: 70px 30px 20px;
+}
+.socialIcons{
+   display: flex;
+   justify-content: center;
+}
+.socialIcons a{
+   text-decoration: none;
+   padding: 10px;
+   background-color: white;
+   margin: 10px;
+   border-radius: 50%;
+}
+.socialIcons a i{
+   font-size: 2em;
+   color: black;
+   opacity: 0.9;
+}
+/* Hover Effects on Social Media Icons */
+.socialIcons a:hover{
+   background-color: #111;
+   transition: 0.5s;
+}
+.socialIcons i:hover{
+   background-color: white;
+   transition: 0.5s;
+}
+.footerNav{
+   margin: 30px 0;
+}
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+}
+.footerNav ul li a{
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3em;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+.footerNav ul li a:hover{
+   opacity: 1;
+}
+.footerBottom{
+   background-color: #000;
+   padding: 20px;
+   text-align: center;
+}
+.footerBottom p{
+   color: white;
+}
+.designer{
+   opacity: 0.7;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+   margin: 0px 5px;
+}
+@media (max-width: 700px){
+   .footerNav ul{
+      flex-direction: column;
+   }
+   .footerNav ul li{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+   }
+}
