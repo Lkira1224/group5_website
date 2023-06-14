@@ -20,8 +20,14 @@ h4{
    font-weight: 300;
    line-height: 24px;
 }
+.container-fluid ul li a{
+   font-size: 30px;
+}
+.navbar-brand{
+   font-size: 30px;
+}
 .container p{
-   margin-bottom: 15px;
+   text-align: justify;
 }
 .thumbnail{
    width: 450px;
@@ -98,6 +104,7 @@ footer{
    font-size: 2em;
    color: black;
    opacity: 0.9;
+   
 }
 /* Hover Effects on Social Media Icons */
 .socialIcons a:hover{
@@ -120,7 +127,7 @@ footer{
    color: white;
    margin: 20px;
    text-decoration: none;
-   font-size: 1.3em;
+   font-size: 1.5em;
    opacity: 0.7;
    transition: 0.5s;
 }
@@ -151,4 +158,34 @@ footer{
       text-align: center;
       margin: 10px;
    }
+}
+
+*{
+   font-family: 'Source Code Pro', monospace;
+}
+.col-sm-4 div{
+   padding: 50px;
+}
+.col-sm-4 div p{
+   text-align: justify;
+}
+.col-sm-4 div h3{
+   border-bottom: 1px solid #000;
+   padding-bottom: 10px;
+   margin-bottom: 30px;
+}
+.carousel-inner .item:nth-child(1){
+   background: #352b2542;
+}
+.carousel-inner .item:nth-child(2){
+   background: #f8f8f8;
+}
+.carousel-inner .item:nth-child(3){
+   background: #00cec9;
+}
+.carousel-inner .item:nth-child(4){
+   background: #f312d5;
+}
+.carousel-inner .item:nth-child(5){
+   background: #12f343;
 }

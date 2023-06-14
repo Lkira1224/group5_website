@@ -1,84 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="https://icon-library.com/images/league-of-legends-icon/league-of-legends-icon-11.jpg">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="footer.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>League of Legends</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Bootstrap CSS cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+   <title>League of Legends</title>
 </head>
 <body>
 
-<div class="hero-img"></div>
-<div class="wrapper">
-    <header>
-        <a href="#" class="logo">League <span>of Legends</span></a>
-
-        <nav>
-            <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2V2ZM14.71 13.29C14.8037 13.383 14.8781 13.4936 14.9289 13.6154C14.9797 13.7373 15.0058 13.868 15.0058 14C15.0058 14.132 14.9797 14.2627 14.9289 14.3846C14.8781 14.5064 14.8037 14.617 14.71 14.71C14.617 14.8037 14.5064 14.8781 14.3846 14.9289C14.2627 14.9797 14.132 15.0058 14 15.0058C13.868 15.0058 13.7373 14.9797 13.6154 14.9289C13.4936 14.8781 13.383 14.8037 13.29 14.71L12 13.41L10.71 14.71C10.617 14.8037 10.5064 14.8781 10.3846 14.9289C10.2627 14.9797 10.132 15.0058 10 15.0058C9.86799 15.0058 9.73729 14.9797 9.61543 14.9289C9.49357 14.8781 9.38297 14.8037 9.29 14.71C9.19628 14.617 9.12188 14.5064 9.07111 14.3846C9.02034 14.2627 8.99421 14.132 8.99421 14C8.99421 13.868 9.02034 13.7373 9.07111 13.6154C9.12188 13.4936 9.19628 13.383 9.29 13.29L10.59 12L9.29 10.71C9.1017 10.5217 8.99591 10.2663 8.99591 10C8.99591 9.7337 9.1017 9.4783 9.29 9.29C9.47831 9.1017 9.7337 8.99591 10 8.99591C10.2663 8.99591 10.5217 9.1017 10.71 9.29L12 10.59L13.29 9.29C13.4783 9.1017 13.7337 8.99591 14 8.99591C14.2663 8.99591 14.5217 9.1017 14.71 9.29C14.8983 9.4783 15.0041 9.7337 15.0041 10C15.0041 10.2663 14.8983 10.5217 14.71 10.71L13.41 12L14.71 13.29Z" fill="slateblue"/>
-            </svg>
-
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="TTTT.html">Teams</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-
-        <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
-        </svg>
-    </header>
+  <!--Navbar start-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <img src="https://logosbynick.com/wp-content/uploads/2020/06/esports-logo.png" alt="..." height="50">
+      <a class="navbar-brand" href="#">Group 5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Teams.html">Teams</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar end-->
 
     <section class="hero">
         <h1>Welcome to the League of Legends Esports scene. Learn more about it and play the game!</h1>
 
         <p class="subhead">Find out more about the importance, relevance, and history of League of Legends</p>
+
+    </section>
+    </div>
+
+    <hr>
+  <!--Featured start-->
+  <div class="container">
+    <div class="thumbnail right">
+      <img src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3" alt="">
+    </div>
+    <h4>History</h4>
+    <p>
+      The history of League of Legends (LoL) esports begins with the game's release in 2009 by Riot Games. Initially, the competitive scene was driven by community-led tournaments and small-scale events. However, in 2010, Riot Games organized the first official LoL World Championship, known as the Season 1 Championship, held in Sweden. It featured teams from various regions competing for a $100,000 prize pool. This tournament set the foundation for future LoL esports events and showcased the game's potential as an esport.
+
+In subsequent years, the LoL esports scene continued to expand and evolve. Riot Games introduced regional leagues, which became the backbone of professional play. In 2012, the League of Legends Championship Series (LCS) was established in North America, followed by the League of Legends European Championship (LEC) in Europe in 2013. These leagues adopted a franchising model, providing stability, long-term investments, and professional infrastructure for teams.
+
+The popularity of LoL esports soared with the annual World Championship. Each year, the tournament grew in scale and prize pool, captivating millions of viewers worldwide. The 2014 World Championship, held in South Korea, marked a turning point, as it attracted over 27 million viewers for the finals. The success of the World Championship further solidified LoL as a leading esport.
+
+Riot Games expanded its international events with the introduction of the Mid-Season Invitational (MSI) in 2015. The MSI brought together top teams from different regions for a mid-year showdown. It became another prestigious event in the LoL esports calendar, showcasing international competition.
+
+Throughout the years, regional leagues in Asia gained prominence, with the League of Legends Pro League (LPL) in China and the League of Legends Champions Korea (LCK) becoming powerhouses in the competitive scene. These leagues produced legendary players and highly competitive teams, adding to the global appeal of LoL esports.
+
+Riot Games continued to innovate and improve the competitive ecosystem. In 2018, they introduced the franchising model for the North American LCS, transitioning from a promotion/relegation system to a more stable league structure. This move attracted significant investments from traditional sports teams and organizations, elevating the professionalism and commercial viability of LoL esports.
+
+The impact of LoL esports extended beyond the game itself. It spawned a vibrant ecosystem of content creators, streamers, and analysts, who provided in-depth coverage, analysis, and entertainment for fans. Esports organizations and players became celebrities, with huge fan bases and lucrative sponsorships. The recognition and support from mainstream media and sponsors further propelled the growth and relevance of LoL esports.
+
+Today, League of Legends esports is a global phenomenon, with millions of viewers tuning in to watch matches, packed arenas during live events, and substantial prize pools. It continues to evolve with new game updates, improved broadcast production, and expanded global reach. The success and impact of LoL esports have solidified its relevance as one of the most prominent and influential esports in the world.
+    </p>
+<hr>
+    <div class="thumbnail left">
+      <img src="https://codigoesports.com/wp-content/uploads/2022/07/League-of-Legends-Stream-Overlay.webp" alt="">
+    </div>
+    <h4>Importance</h4>
+    <p>
+      
+Esports has gained significant importance and impact in multiple aspects of society. Firstly, esports has become a major form of entertainment and has captivated a massive global audience. With millions of viewers tuning in to watch tournaments and matches, esports has established itself as a mainstream entertainment industry. Its popularity rivals that of traditional sports, with dedicated fans and communities that actively engage with the games and players. The rise of streaming platforms and online broadcasting has made esports accessible to a wider audience, transcending geographical barriers and bringing people together through a shared passion for gaming and competition.
+
+Secondly, esports has created substantial economic opportunities. The industry has witnessed a tremendous growth in investments, sponsorships, and revenue streams. Professional players, teams, and organizations can now make a living from gaming, with substantial salaries and endorsement deals. The growth of esports has also led to the emergence of related industries, such as event management, content creation, and merchandise sales. Esports events, both online and offline, generate significant revenue through ticket sales, advertising, and media rights. This economic impact has not only benefited players and teams but also local economies and the gaming industry as a whole.
+
+Lastly, esports has demonstrated the potential for skill development and educational value. Competitive gaming requires strategic thinking, teamwork, communication, and quick decision-making. As a result, educational institutions have started recognizing the benefits of incorporating esports into their programs. Esports programs and clubs in schools and universities offer students opportunities to develop skills in areas like problem-solving, critical thinking, and collaboration. Furthermore, esports scholarships and collegiate leagues have emerged, providing opportunities for students to pursue their passion for gaming while receiving education support.
+
+In summary, the importance of esports can be seen in its role as a major form of entertainment, its significant economic impact, and its potential for skill development and educational value. As the industry continues to grow and evolve, esports is likely to become even more influential, shaping the future of entertainment, sports, and education.
+    </p>
+<hr>
+    <div class="thumbnail right">
+        <img src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3" alt="">
+      </div>
+      <h4>History</h4>
+      <p>
+        The history of League of Legends (LoL) esports begins with the game's release in 2009 by Riot Games. Initially, the competitive scene was driven by community-led tournaments and small-scale events. However, in 2010, Riot Games organized the first official LoL World Championship, known as the Season 1 Championship, held in Sweden. It featured teams from various regions competing for a $100,000 prize pool. This tournament set the foundation for future LoL esports events and showcased the game's potential as an esport.
+  
+  In subsequent years, the LoL esports scene continued to expand and evolve. Riot Games introduced regional leagues, which became the backbone of professional play. In 2012, the League of Legends Championship Series (LCS) was established in North America, followed by the League of Legends European Championship (LEC) in Europe in 2013. These leagues adopted a franchising model, providing stability, long-term investments, and professional infrastructure for teams.
+  
+  The popularity of LoL esports soared with the annual World Championship. Each year, the tournament grew in scale and prize pool, captivating millions of viewers worldwide. The 2014 World Championship, held in South Korea, marked a turning point, as it attracted over 27 million viewers for the finals. The success of the World Championship further solidified LoL as a leading esport.
+  
+  Riot Games expanded its international events with the introduction of the Mid-Season Invitational (MSI) in 2015. The MSI brought together top teams from different regions for a mid-year showdown. It became another prestigious event in the LoL esports calendar, showcasing international competition.
+  
+  Throughout the years, regional leagues in Asia gained prominence, with the League of Legends Pro League (LPL) in China and the League of Legends Champions Korea (LCK) becoming powerhouses in the competitive scene. These leagues produced legendary players and highly competitive teams, adding to the global appeal of LoL esports.
+  
+  Riot Games continued to innovate and improve the competitive ecosystem. In 2018, they introduced the franchising model for the North American LCS, transitioning from a promotion/relegation system to a more stable league structure. This move attracted significant investments from traditional sports teams and organizations, elevating the professionalism and commercial viability of LoL esports.
+  
+  The impact of LoL esports extended beyond the game itself. It spawned a vibrant ecosystem of content creators, streamers, and analysts, who provided in-depth coverage, analysis, and entertainment for fans. Esports organizations and players became celebrities, with huge fan bases and lucrative sponsorships. The recognition and support from mainstream media and sponsors further propelled the growth and relevance of LoL esports.
+  
+  Today, League of Legends esports is a global phenomenon, with millions of viewers tuning in to watch matches, packed arenas during live events, and substantial prize pools. It continues to evolve with new game updates, improved broadcast production, and expanded global reach. The success and impact of LoL esports have solidified its relevance as one of the most prominent and influential esports in the world.
+      </p>
+<hr>
+      <div class="thumbnail left">
+        <img src="https://codigoesports.com/wp-content/uploads/2022/07/League-of-Legends-Stream-Overlay.webp" alt="">
+      </div>
+      <h4>Importance</h4>
+      <p>
         
-        <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
-        </svg>
-    </section>
+  Esports has gained significant importance and impact in multiple aspects of society. Firstly, esports has become a major form of entertainment and has captivated a massive global audience. With millions of viewers tuning in to watch tournaments and matches, esports has established itself as a mainstream entertainment industry. Its popularity rivals that of traditional sports, with dedicated fans and communities that actively engage with the games and players. The rise of streaming platforms and online broadcasting has made esports accessible to a wider audience, transcending geographical barriers and bringing people together through a shared passion for gaming and competition.
+  
+  Secondly, esports has created substantial economic opportunities. The industry has witnessed a tremendous growth in investments, sponsorships, and revenue streams. Professional players, teams, and organizations can now make a living from gaming, with substantial salaries and endorsement deals. The growth of esports has also led to the emergence of related industries, such as event management, content creation, and merchandise sales. Esports events, both online and offline, generate significant revenue through ticket sales, advertising, and media rights. This economic impact has not only benefited players and teams but also local economies and the gaming industry as a whole.
+  
+  Lastly, esports has demonstrated the potential for skill development and educational value. Competitive gaming requires strategic thinking, teamwork, communication, and quick decision-making. As a result, educational institutions have started recognizing the benefits of incorporating esports into their programs. Esports programs and clubs in schools and universities offer students opportunities to develop skills in areas like problem-solving, critical thinking, and collaboration. Furthermore, esports scholarships and collegiate leagues have emerged, providing opportunities for students to pursue their passion for gaming while receiving education support.
+  
+  In summary, the importance of esports can be seen in its role as a major form of entertainment, its significant economic impact, and its potential for skill development and educational value. As the industry continues to grow and evolve, esports is likely to become even more influential, shaping the future of entertainment, sports, and education.
+      </p>
+  <hr>
+  <div class="thumbnail right">
+    <img src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3" alt="">
+  </div>
+  <h4>History</h4>
+  <p>
+    The history of League of Legends (LoL) esports begins with the game's release in 2009 by Riot Games. Initially, the competitive scene was driven by community-led tournaments and small-scale events. However, in 2010, Riot Games organized the first official LoL World Championship, known as the Season 1 Championship, held in Sweden. It featured teams from various regions competing for a $100,000 prize pool. This tournament set the foundation for future LoL esports events and showcased the game's potential as an esport.
+
+In subsequent years, the LoL esports scene continued to expand and evolve. Riot Games introduced regional leagues, which became the backbone of professional play. In 2012, the League of Legends Championship Series (LCS) was established in North America, followed by the League of Legends European Championship (LEC) in Europe in 2013. These leagues adopted a franchising model, providing stability, long-term investments, and professional infrastructure for teams.
+
+The popularity of LoL esports soared with the annual World Championship. Each year, the tournament grew in scale and prize pool, captivating millions of viewers worldwide. The 2014 World Championship, held in South Korea, marked a turning point, as it attracted over 27 million viewers for the finals. The success of the World Championship further solidified LoL as a leading esport.
+
+Riot Games expanded its international events with the introduction of the Mid-Season Invitational (MSI) in 2015. The MSI brought together top teams from different regions for a mid-year showdown. It became another prestigious event in the LoL esports calendar, showcasing international competition.
+
+Throughout the years, regional leagues in Asia gained prominence, with the League of Legends Pro League (LPL) in China and the League of Legends Champions Korea (LCK) becoming powerhouses in the competitive scene. These leagues produced legendary players and highly competitive teams, adding to the global appeal of LoL esports.
+
+Riot Games continued to innovate and improve the competitive ecosystem. In 2018, they introduced the franchising model for the North American LCS, transitioning from a promotion/relegation system to a more stable league structure. This move attracted significant investments from traditional sports teams and organizations, elevating the professionalism and commercial viability of LoL esports.
+
+The impact of LoL esports extended beyond the game itself. It spawned a vibrant ecosystem of content creators, streamers, and analysts, who provided in-depth coverage, analysis, and entertainment for fans. Esports organizations and players became celebrities, with huge fan bases and lucrative sponsorships. The recognition and support from mainstream media and sponsors further propelled the growth and relevance of LoL esports.
+
+Today, League of Legends esports is a global phenomenon, with millions of viewers tuning in to watch matches, packed arenas during live events, and substantial prize pools. It continues to evolve with new game updates, improved broadcast production, and expanded global reach. The success and impact of LoL esports have solidified its relevance as one of the most prominent and influential esports in the world.
+  </p>
+  </div>
+  <!--Featured end-->
+
+<!--Team Pages Start-->
+<!--Team Pages End-->
+
+  <!--Footer start-->
+  <footer>
+    <div class="footercontainer">
+
+      <div class="footerNav">
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Our Team</a></li>
+        </ul>
+      </div>
+        
+      <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
     </div>
-
-    <section class="more-info">
-        <div class="feature">
-            <div class="content">
-                <p class="title">ESports</p>
-                <p class="desc">Esports, short for electronic sports, refers to competitive video gaming where professional players and teams compete against each other in various video games. It has rapidly grown into a global phenomenon, with millions of fans and participants worldwide. Esports tournaments are often organized in arenas or streamed online, attracting massive viewership. Professional esports players are highly skilled and dedicated, practicing for hours to hone their abilities. They compete in popular games such as League of Legends, Counter-Strike: Global Offensive, Dota 2, and Overwatch, among others. The esports industry has evolved to include sponsorships, lucrative prize pools, and professional leagues, mirroring traditional sports. It has become a major entertainment sector, capturing the attention of both gaming enthusiasts and mainstream audiences.</p>
-            </div>
-            <img src="league-of-legends-world-championship.png" alt="Another shoe">
-        </div>
-        <div class="feature left">
-            <div class="content">
-                <p class="title">League of Legends</p>
-                <p class="desc">League of Legends (LoL) is a highly popular multiplayer online battle arena (MOBA) video game developed by Riot Games.
-                     In LoL, players assume the role of champions and compete in teams to destroy the enemy's base while defending their own. The game features a vast roster of unique champions, each with their own abilities and playstyles.
-                      Matches take place on diverse maps with strategic elements, and players must coordinate their actions, use tactics, and make quick decisions to outplay their opponents. With its competitive nature, complex gameplay mechanics, and regular updates, League of Legends has established itself as one of the leading esports titles, captivating a massive player base and attracting professional teams and tournaments globally.</p>
-            </div>
-            <img src="Summoners-Rift-e1658690646915.png" alt="Another shoe">
-        </div>
-        <div class="feature">
-            <div class="content">
-                <p class="title">History</p>
-                <p class="desc">The history of League of Legends esports began with the game's launch in 2009 by Riot Games. It started with grassroots tournaments and community-driven events, but as the game's popularity grew, Riot Games established a more structured competitive framework. The first official League of Legends World Championship, known as the Season 1 Championship, took place in 2010, marking a significant milestone for the game. Over the years, the competitive scene expanded with the introduction of regional leagues like LCS and LEC, and the annual World Championship became a global spectacle. Riot Games also implemented franchising models and introduced events like the Mid-Season Invitational. League of Legends esports has experienced tremendous growth, becoming one of the most prominent and popular esports titles globally.</p>
-            </div>
-            <img src="SamsungGalaxytrophy2017WorldChampionship.png" alt="Another shoe">
-        </div>
-        <div class="feature left">
-            <div class="content">
-                <p class="title">Relevance</p>
-                <p class="desc">Esports has gained immense relevance in recent years due to its widespread popularity and cultural impact. It has emerged as a major entertainment industry, captivating millions of viewers worldwide. Esports offers a unique blend of competition, skill, and entertainment, attracting both passionate gaming enthusiasts and mainstream audiences. With its engaging gameplay, compelling narratives, and high-stakes tournaments, esports has become a source of entertainment that rivals traditional sports and other forms of media. It has created a new avenue for careers and opportunities, with professional players, teams, casters, and content creators finding success and recognition within the esports ecosystem. Additionally, esports has transcended geographical boundaries, connecting people globally through a shared passion for gaming and competition. Its relevance extends beyond entertainment, with educational institutions recognizing the potential of esports in areas like teamwork, strategy, and critical thinking. As technology continues to advance and esports continues to evolve, its relevance is likely to grow, shaping the future of entertainment and competition.</p>
-            </div>
-            <img src="12aec120-825f-11ed-a6f5-fd112bbd5f40.jpg" alt="Another shoe">
-        </div>
-    </section>
+    <div class="footerBottom">
+      <p>Copyright &copy;2023 Designed by <span class="designer">Group 5</span></p>
     </div>
-</div>
+  </footer>
+  <!--Footer end-->
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   
 
 <script src="shimiyah.js"></script>
