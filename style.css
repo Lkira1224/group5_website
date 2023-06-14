@@ -10,8 +10,17 @@ html,body{
    padding: 0;
    overflow-x: hidden;
 }
+h1{
+   text-align: right;
+}
+h2{
+   text-align: left;
+}
+h3{
+   text-align: right;
+}
 h4{
-   text-align: center;
+   text-align: left;
 }
 .container{
    padding: 30px;
@@ -19,14 +28,44 @@ h4{
    font-size: 16px;
    font-weight: 300;
    line-height: 24px;
+   filter: grayscale(100%);
 }
 .container-fluid ul li a{
+   font-size: 30px;
+}
+.container:hover{
+   background-color: rgb(212, 211, 202);
+   filter: grayscale(0);
+}
+.container p{
+   text-align: justify;
+}
+.my-container{
+   padding: 30px;
+   font-family: 'roboto';
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 24px;
+   filter: grayscale(100%);
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.my-container:hover{
+   background-color: rgb(231, 152, 152);
+   filter: grayscale(0);
+}
+.my-container:hover.my-container img{
+   cursor: pointer;
+   transition: all 0.5s ease-in-out;
+   transform: scale(1.2);
+}
+.my-container-fluid ul li a{
    font-size: 30px;
 }
 .navbar-brand{
    font-size: 30px;
 }
-.container p{
+.my-container p{
    text-align: justify;
 }
 .thumbnail{
@@ -174,18 +213,21 @@ footer{
    padding-bottom: 10px;
    margin-bottom: 30px;
 }
+.container h3{
+   text-align: center;
+}
 .carousel-inner .item:nth-child(1){
-   background: #352b2542;
+   background: #f8f8f8;
 }
 .carousel-inner .item:nth-child(2){
    background: #f8f8f8;
 }
 .carousel-inner .item:nth-child(3){
-   background: #00cec9;
+   background: #f8f8f8;
 }
 .carousel-inner .item:nth-child(4){
-   background: #f312d5;
+   background: #f8f8f8;
 }
 .carousel-inner .item:nth-child(5){
-   background: #12f343;
+   background: #f8f8f8;
 }
