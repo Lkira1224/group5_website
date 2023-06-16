@@ -381,3 +381,14 @@ footer{
 .card-block h6 p{
    font-family: 'Times New Roman', Times, serif;
 }
+
+.cid-sF93ETFlLn {
+   background-color: #ffffff;
+   max-width: fit-content;
+   margin: auto;
+}
+section {
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}

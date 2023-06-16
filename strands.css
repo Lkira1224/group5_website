@@ -20,9 +20,11 @@
 }
 .main-container .hero {
   grid-area: hero;
-  background-image: url("http://pcaat.edu.ph/assets/images/171487325-824134984873520-6014975624572565721-n-696x522.jpg");
-  background-repeat: no-repeat;
+  grid-template-columns: repeat(5,1f);
+  grid-template-columns: 40vh 30vh 30vh;
+  background-image: url("strands.JPG");
   background-size: cover;
+  padding-bottom: 200px;
 }
 .main-container main {
   grid-area: main;
