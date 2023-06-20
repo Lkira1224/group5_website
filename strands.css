@@ -44,6 +44,7 @@
 .main-container main .container-text-heading h1 .text-heading-highlight {
   font-weight: 300;
   color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
 }
 .main-container main .container-text-content {
   padding: 2rem 0;
@@ -52,6 +53,7 @@
   color: hsl(0, 36%, 70%);
   font-size: 1.2rem;
   line-height: 1.5;
+  font-family: "Josefin Sans", sans-serif;
 }
 .main-container main .form-container form {
   display: flex;
@@ -195,20 +197,19 @@
 }
 
 .card {
-  border-radius: 0;
-  margin: 10px auto;
+  background-color: transparent;
+  margin: 5px auto;
 }
 
 .card-title {
   text-transform: uppercase;
-  color: #E44424;
 }
 
 .card-text {
   margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #FFFFFF;
-  color: #000000;
+  margin-bottom: 5px;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a.btn, a.btn:visited {

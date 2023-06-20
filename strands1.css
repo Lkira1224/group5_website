@@ -16,10 +16,6 @@ html, body {
   border-radius: 50%;
 }
 
-.navbar-custom {
-  height: 100px;
-}
-
 h1 {
   text-align: right;
 }
@@ -98,7 +94,7 @@ h4 {
 
 .container {
   padding: 30px;
-  font-family: "roboto";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -120,7 +116,7 @@ h4 {
 
 .my-container {
   padding: 30px;
-  font-family: "roboto";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -227,7 +223,6 @@ footer {
 .socialIcons a {
   text-decoration: none;
   padding: 10px;
-  background-color: white;
   margin: 10px;
   border-radius: 50%;
 }
@@ -301,7 +296,7 @@ footer {
   }
 }
 * {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .col-sm-4 div {
